@@ -1,0 +1,16 @@
+[package]
+name = "thumbnail-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+axum = { version = "0.7.5", features = ["multipart"] }
+axum-server = "0.7.1"
+dotenv = "0.15.0"
+futures = "0.3.30"
+image = "0.25.2"
+serde = { version = "1.0.205", features = ["derive"] }
+sqlx = { version = "0.8.0", features = ["runtime-tokio-native-tls", "sqlite"] }
+tokio = { version = "1.39.2", features = ["full"] }
+tokio-util = { version = "0.7.11", features = ["io"] }
